@@ -1,0 +1,412 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000; /* Dark background */
+  color: #f5f5f5; /* Light text color for high contrast */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #f7a600; /* Gold color for headings */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 15px;
+  margin-bottom: 40px;
+}
+
+.about-us {
+  background: linear-gradient(135deg, #000000, #222222);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+}
+
+.story {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 900px;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+ul {
+  padding-left: 20px;
+  color: #f5f5f5;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  padding: 40px;
+  margin-top: 40px;
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.shifted-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: left;
+}
+
+.other-content p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.other-content ul {
+  margin-top: 20px;
+}
+
+.other-content li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Links and Buttons */
+a {
+  color: #f7a600;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+a:hover {
+  color: #ff9800;
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #f7a600;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff9800;
+  transform: translateY(-2px);
+}
+
+/* Why Choose Us Section */
+.why-choose-us ul {
+  list-style-type: disc;
+  color: #f5f5f5;
+  padding-left: 20px;
+}
+
+.why-choose-us li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 30px;
+}
+
+.why-choose-us strong {
+  color: #f7a600;
+  font-weight: 600;
+}
+
+/* our-story */
+/* Our Story Section */
+.our-story {
+  background-color: #2c2c2c; /* Dark background for consistency */
+  color: #f5f5f5; /* Light text color */
+  padding: 60px 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling the Heading */
+.our-story h2 {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 3rem; /* Larger font size */
+  font-weight: 700; /* Bold heading */
+  color: #f7a600; /* Accent color for heading */
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-transform: uppercase; /* Make the heading all caps */
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.our-story h2::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: #f7a600;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Our Story Paragraphs Styling */
+.our-story .story {
+  font-family: 'Roboto', sans-serif; /* Elegant font */
+  font-size: 1.4rem; /* Slightly larger for readability */
+  line-height: 1.8; /* Adjust line height for better spacing */
+  color: #ddd; /* Soft light color for the text */
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto 30px;
+  text-align: left; /* Left-align the text */
+  position: relative;
+  padding: 0 20px; /* Add padding on the sides */
+  transition: color 0.3s ease;
+}
+
+/* Add vertical lines before each paragraph */
+.our-story .story::before {
+  content: "";
+  position: absolute;
+  left: -15px; /* Adjust the left position for the vertical line */
+  top: 0;
+  height: 100%;
+  width: 4px; /* Line thickness */
+  background-color: #f7a600; /* Line color */
+  border-radius: 2px;
+}
+
+/* Hover effect for paragraphs */
+.our-story .story:hover {
+  color: #f7a600;
+}
+
+/* Add subtle drop shadow to text */
+.our-story .story {
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsiveness for better readability */
+@media (max-width: 768px) {
+  .our-story h2 {
+      font-size: 2rem;
+  }
+  .our-story .story {
+      font-size: 1.2rem;
+  }
+}
+
+
+
+/* our-mission */
+/* Our Mission Section */
+.our-mission {
+  background-color: #1e1e1e; /* Dark background to match theme */
+  color: #f5f5f5; /* Light text color */
+  padding: 60px 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a gradient effect to the header */
+.our-mission h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #f7a600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.our-mission h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100px;
+  height: 4px;
+  background-color: #f7a600;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Mission Paragraph Styling */
+.our-mission p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-style: italic;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect on text */
+.our-mission p:hover {
+  color: #f7a600;
+}
+
+/* Our Mission Section */
+.our-mission {
+  background-color: #1e1e1e; /* Dark background to match theme */
+  color: #f5f5f5; /* Light text color */
+  padding: 60px 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a gradient effect to the header */
+.our-mission h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #f7a600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.our-mission h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100px;
+  height: 4px;
+  background-color: #f7a600;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Mission Paragraph Styling */
+.our-mission p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-style: italic;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect on text */
+.our-mission p:hover {
+  color: #f7a600;
+}
+
+/* Logo Styling */
+
+/* Button for action */
+.our-mission button {
+  background-color: #f7a600;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-top: 20px;
+}
+
+.our-mission button:hover {
+  background-color: #ff9800;
+  transform: translateY(-2px);
+}
+
+
+
+
+/* Get in Touch Section */
+.get-in-touch {
+  background-color: #1f1f1f;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.get-in-touch ul {
+  list-style: none;
+  padding: 0;
+}
+
+.get-in-touch li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.get-in-touch img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.get-in-touch li i {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+/* Hover Effect for Links */
+.get-in-touch li:hover {
+  transform: translateX(5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  section {
+      padding: 40px 15px;
+  }
+
+  .grid-container {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      margin-top: 20px;
+  }
+
+  .story {
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  h1, h2 {
+      font-size: 2rem;
+  }
+}

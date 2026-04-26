@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Position the background image */
+        body {
+            display: flex;
+            padding-right: 100px;
+            justify-content: right;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Create a blurred background */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../images/1850781-caWp7UJdAh-high_0006.avif') no-repeat center center fixed; /* Add background image */
+            background-size: cover;
+            filter: blur(2px); /* Blur effect */
+            z-index: -1; /* Place the background behind content */
+        }
+
+        /* Style the chatbot iframe */
+        iframe {
+            border: 2px solid #222254; /* Green border for the chatbot */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visual effect */
+            background-color: #090a13; /* Ensure a clean background for the chatbot */
+            z-index: 1; /* Ensure iframe stays above the blurred background */
+        }
+    </style>
+</head>
+<body>
+    <!-- Blurred background -->
+    <div class="background"></div>
+
+    <!-- Chatbot iframe -->
+    <iframe width="500" height="530" allow="microphone;" 
+        src="https://console.dialogflow.com/api-client/demo/embedded/079a49d6-8fa3-42a5-85b8-1ef573ed2001">
+    </iframe>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITShiksha - E-Learning Platform</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #1f1f1f, #1f1f1f);
+            color: #ffffff;
+            padding: 1em 0;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            flex-direction: column;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        h2 {
+            font-size: 2.2em;
+            color: #f0f0f0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    width: 85%;
+    max-width: 1200px;
+}
+
+.course-card {
+    background: linear-gradient(145deg, #1e1e1e, #292929);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7), 0 -4px 6px rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffffff; /* Ensures the text color is white */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: #1e1e1e;
+}
+
+.course-card a {
+    color: #ffffff; /* Makes the anchor text white */
+    text-decoration: none; /* Removes underline for links */
+}
+
+.course-card a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+        .course-card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 18px rgba(0, 0, 0, 0.9), 0 -4px 6px rgba(255, 255, 255, 0.1);
+            background: linear-gradient(145deg, #292929, #383838);
+        }
+        footer {
+            background: linear-gradient(90deg, #1f1f1f, #1e1e1e);
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to VITShiksha - Learn at Your Pace
+    </header>
+    <main>
+        <h2>Explore Our Popular Courses</h2>
+        <div class="course-container">
+            <div class="course-card"> <a href="../views/AI.html">Artificial Intelligence</a></div>
+            <div class="course-card"><a href="../views/DBMS.html">Database Management System</a></div>
+            <div class="course-card"><a href="../views/OS.html">Operating System</a></div>
+            <div class="course-card"><a href="../views/Python.html">Python Programming</a></div>
+            <div class="course-card"><a href="../views/JAVA.html">Java Programming</a></div>
+            <div class="course-card"><a href="../views/OOPS.html">Object-Oriented Programming System</a></div>
+            <div class="course-card"><a href="../views/DSA.html">Data Structures and Algorithm</a></div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 VITShiksha | Empowering Learning Through Innovation
+    </footer>
+</body>
+</html>

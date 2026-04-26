@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - VitShiksha</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #bb86fc;
+        }
+        .blog-post {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .blog-post h2 {
+            color: #03dac6;
+        }
+        .blog-post p {
+            line-height: 1.6;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .full-post {
+            display: none;
+            margin-top: 20px;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .full-post h2 {
+            color: #03dac6;
+        }
+        .close-post {
+            display: block;
+            margin-top: 10px;
+            color: #bb86fc;
+            text-decoration: none;
+            text-align: right;
+        }
+        .close-post:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e1e;
+            color: #e0e0e0;
+            border-top: 2px solid #03dac6;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showFullPost(postId) {
+            document.querySelectorAll('.blog-post').forEach(post => post.style.display = 'none');
+            document.querySelector(`#${postId}`).style.display = 'block';
+        }
+
+        function hideFullPost() {
+            document.querySelectorAll('.full-post').forEach(post => post.style.display = 'none');
+            document.querySelectorAll('.blog-post').forEach(post => post.style.display = 'block');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Blog</h1>
+        <p>Welcome to the VitShiksha Blog! Stay updated with the latest trends in e-learning and education.</p>
+
+        <div class="blog-post">
+            <h2>How to Get Started with Online Learning</h2>
+            <p>Online learning has revolutionized education. In this post, we share tips on how to start your online learning journey effectively...</p>
+            <a href="javascript:void(0)" class="read-more" onclick="showFullPost('post1')">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>Top 5 E-learning Tools You Should Know</h2>
+            <p>Discover the most effective e-learning tools that can enhance your study experience and make learning more engaging...</p>
+            <a href="javascript:void(0)" class="read-more" onclick="showFullPost('post2')">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>The Future of Education: Trends to Watch</h2>
+            <p>Education is evolving rapidly. In this article, we explore the latest trends that are shaping the future of learning...</p>
+            <a href="javascript:void(0)" class="read-more" onclick="showFullPost('post3')">Read More</a>
+        </div>
+
+        <div id="post1" class="full-post">
+            <h2>How to Get Started with Online Learning</h2>
+            <p>Online learning offers a flexible and convenient way to gain new skills and knowledge. To get started, choose a reliable e-learning platform, set specific learning goals, and create a dedicated study schedule. Remember to eliminate distractions and regularly review your progress to stay motivated.</p>
+            <a href="javascript:void(0)" class="close-post" onclick="hideFullPost()">Close</a>
+        </div>
+
+        <div id="post2" class="full-post">
+            <h2>Top 5 E-learning Tools You Should Know</h2>
+            <p>Some of the best e-learning tools include Coursera for courses, Grammarly for writing assistance, Quizlet for flashcards, Google Workspace for collaboration, and Zoom for virtual meetings. These tools can help you learn efficiently and stay organized.</p>
+            <a href="javascript:void(0)" class="close-post" onclick="hideFullPost()">Close</a>
+        </div>
+
+        <div id="post3" class="full-post">
+            <h2>The Future of Education: Trends to Watch</h2>
+            <p>With advancements in technology, education is moving towards personalized learning experiences powered by AI, gamified lessons to boost engagement, and virtual reality for immersive learning. These trends are set to redefine how we approach education.</p>
+            <a href="javascript:void(0)" class="close-post" onclick="hideFullPost()">Close</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VitShiksha. All Rights Reserved.</p>
+        <p>For inquiries, visit our <a href="contact.html">Contact Us</a> page or follow us on <a href="undercon.html">Social Media</a>.</p>
+    </footer>
+</body>
+</html>
